@@ -21,3 +21,7 @@ FlatLab Theme templates for InfyOm Laravel Generator
 5. Run Infyom publish layout command
  
         php artisan infyom.publish:layout
+
+6. Check following file,
+ `resources/views/layouts/app.blade.php` and find `path-to-flatlab` and replace this with your FlatLab theme's `admin/template_content` folder with following folders:
+  `assets, css, fonts, img, js`
