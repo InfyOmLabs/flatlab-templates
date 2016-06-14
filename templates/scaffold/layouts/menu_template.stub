@@ -1,0 +1,7 @@
+<li class="sub-menu dcjq-parent-li">
+    <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="nav-link nav-toggle {!! Request::is('$MODEL_NAME_PLURAL_CAMEL$*') ? 'active' : '' !!}">
+        <i class="fa fa-edit"></i>
+        <span class="title">$MODEL_NAME_PLURAL$</span>
+    </a>
+</li>
+

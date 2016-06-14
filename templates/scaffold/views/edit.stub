@@ -1,0 +1,22 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                     $MODEL_NAME$
+                </header>
+                <div class="panel-body">
+                    <div class="row">
+                       {!! Form::model($$MODEL_NAME_CAMEL$, ['route' => ['$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_CAMEL$->id], 'method' => 'patch']) !!}
+
+                        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.fields')
+
+                       {!! Form::close() !!}
+                   </div>
+                </div>
+            </section>
+        </div>
+    </div>
+@endsection

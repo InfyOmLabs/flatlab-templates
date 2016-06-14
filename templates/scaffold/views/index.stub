@@ -1,0 +1,20 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    $MODEL_NAME_PLURAL$
+                    <a class="btn btn-primary pull-right" href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') !!}">Add New</a>
+                    <br><br>
+                </header>
+                <div class="panel-body">
+                    @include('flash::message')
+                   @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.table')
+                </div>
+            </section>
+        </div>
+    </div>
+@endsection
+
